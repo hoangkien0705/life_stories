@@ -47,5 +47,12 @@ public class DefaultController {
     public String error403() {
         return "/error/403";
     }
+    
+    @GetMapping("/react")
+    public String react() {
+        return "/life_stories/public/index";
+    }
+    
+    
 
 }

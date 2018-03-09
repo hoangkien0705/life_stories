@@ -22,7 +22,7 @@ public class DateUtils {
 	public Date convertStringToDate(String strDate) {
 		try {
 			return fomat.parse(strDate);
-		} catch (ParseException e) {
+		} catch (Exception e) {
 			return null;
 		}
 	}
