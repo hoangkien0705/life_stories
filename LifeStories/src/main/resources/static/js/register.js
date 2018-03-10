@@ -1,16 +1,8 @@
-//import React from 'react';
-//
-//var KhoaPham = React.createClass({
-//	render: function(){
-//		return(
-//			<h1 className="mauvang">Khoa Pham</h1>
-//		);
-//	}
-//});
+
 
 class Greeting extends React.Component {
     render() {
-        return (<p>Hello world</p>);
+        return (<p>Getting</p>);
     }
 }
 
@@ -18,6 +10,7 @@ ReactDOM.render(
 	<div>
   		HoangKien
   		<Greeting />
+  		<Application />
   	</div>,
   	document.getElementById('root')
 );  

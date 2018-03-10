@@ -33,7 +33,7 @@ public class LifeStoriesSecurityConfig extends WebSecurityConfigurerAdapter {
         http.csrf().disable()
             .authorizeRequests()
             	.antMatchers("/css/**", "/fonts/**", "/image/**", "/js/**").permitAll()
-				.antMatchers("/", "/home", "/about", "/logout","/register","/react").permitAll()//ai cung co the vao cac trang /  /home  /about (cac trang nay nguoi dung khong can xac thuc)
+				.antMatchers("/", "/home", "/about", "/logout","/register","/react", "/public/**").permitAll()//ai cung co the vao cac trang /  /home  /about (cac trang nay nguoi dung khong can xac thuc)
 				.antMatchers("/admin/**").access("hasRole('ROLE_ADMIN')")// chi cho phep user dang nhap voi quyen admin moi vao duong dan /admin/**
 				.antMatchers("/user/**").access("hasRole('ROLE_USER')") //chi cho phep user dang nhap voi quyen user moi vao duong dan /user/**
 				.anyRequest().authenticated()// tat ca moi trang khac deu phai thuc hien xac thuc tuc la: neu chua dang nhap thi phai thuc hien dang nhap moi dc vao trong
