@@ -15,6 +15,9 @@ import com.kienhv.stories.repo.UserRepo;
 import com.kienhv.stories.repo.UserRoleRepo;
 import com.kienhv.stories.website.StoriesUserDetails;
 
+/*
+ * Security đăng nhập lấy về CurrentUser 
+ */
 @Service
 public class StoriesUserDetailService implements UserDetailsService {
 

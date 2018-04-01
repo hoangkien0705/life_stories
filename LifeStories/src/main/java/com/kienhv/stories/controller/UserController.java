@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import com.kienhv.stories.website.CurrentUser;
 
 @Controller
-public class DefaultController {
+public class UserController {
 
     @GetMapping("/")
     public String home1() {
